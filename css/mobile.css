@@ -1,0 +1,141 @@
+/* Colours */
+
+:root {
+    --color-blue: rgb(80, 155, 245);
+    --color-blue-dark: rgb(46, 119, 208);
+    --color-white: rgb(255, 255, 255);
+    --color-black: #000;
+    --color-green-light: rgb(30, 215, 96);
+    --color-green:#1DB954;
+  }
+
+/* Generals */
+
+.container {
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    background-color: var(--color-green);
+    padding: .9rem 3.5rem;
+    text-decoration: none;
+    color: var(--color-white);
+    border-radius: 1.5rem;
+    font-weight: bold; 
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: 2px;
+}
+
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Header */
+
+
+header {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-black);
+    padding: 1rem 0;
+}
+
+.header__logo {
+    height:2rem;
+}
+
+.header__nav {
+    width: 50%;
+}
+
+.header__menu {
+    width: 1.4rem;
+}
+
+.header__list {
+    list-style: none;
+    display: none;
+    justify-content: space-around;
+}
+
+.header__link {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header__link:hover {
+    color: var(--color-black)
+}
+
+.landing {
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+.landing__title {
+    font-size:1.7rem;
+}
+
+.landing__subtitle {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.landing__legal {
+    font-size: .8rem;
+    padding-top: 1.5rem;
+}
+
+.landing__legal__link {
+    color: var(--color-white);
+    
+}
+
+/* Features */
+
+.features {
+    background-color: var(--color-white);
+    color: var(--color-black-light);
+    padding-top: 3rem;
+}
+
+.features__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7rem ;
+    padding-bottom: 3rem;
+}
+
+.features__item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+}
+
+.features__img {
+    width: 6.5rem;
+    height: 6.5rem;
+}
+
+.features__info {
+    width: 50%;
+}
+
