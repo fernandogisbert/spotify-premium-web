@@ -7,7 +7,13 @@
     --color-black: #000;
     --color-green-light: rgb(30, 215, 96);
     --color-green:#1DB954;
+    --color-pink: rgb(167, 137, 190);
   }
+
+   /* @font-face {
+    font-family: 'spotify-circular';
+    src: url('../fonts/CircularSpotify-UI-Latin-OS2v3-Black.woff2') format('woff2');  */
+    
 
 /* Generals */
 
@@ -32,7 +38,7 @@
 
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
 }
 
 /* Header */
@@ -109,6 +115,43 @@ header {
     
 }
 
+/* Student offer */
+
+.student__offer {
+    text-align: center;
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    padding-top: 1.7rem;
+    padding-bottom: 4rem;
+}
+
+.student__title {
+    font-size: 1.5rem;
+}
+
+.student__info {
+    font-size: 1.3rem;
+}
+
+.student__info1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.button-white {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    padding: .9rem 0 !important;
+}
+
+.button-white:hover {
+    background-color: var(--color-white);
+    font-size: 1rem;
+    padding: .9rem 3.5rem;
+    
+}
+
 /* Features */
 
 .features {
@@ -137,5 +180,166 @@ header {
 
 .features__info {
     width: 50%;
+}
+
+/* Plans */
+
+/* Subscription Plans */
+
+.plan {
+    color: var(--color-black-light);
+}
+.plan__info {
+    text-align: center;
+}
+
+.plan__title {
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
+}
+
+.plan__title + p {
+    margin-bottom:3rem;
+}
+.plan__cards {
+    /* display: flex;
+    justify-content:space-between; */
+
+}
+
+.card {
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 22px 1px rgba(135,135,135,1);
+    -moz-box-shadow: 0px 0px 22px 1px rgba(135,135,135,1);
+    box-shadow: 0px 0px 22px 1px rgba(135,135,135,1);
+    border-radius: 1rem;
+    margin: 1rem 0rem;
+    
+}
+
+.container__cards {
+    padding: 1.5rem 1rem;
+}
+
+.card__month {
+    color: var(--color-white);
+    background-color: var(--color-blue-dark);
+    display: inline;
+    font-weight: bold;
+    font-size: .9rem;
+    padding: .5rem;
+    border-radius:.4rem;
+
+}
+
+.card__title {
+    padding-top:1rem;
+    margin-bottom: .1rem;
+    font-size: 1.3rem;
+}
+
+.card__title + p {
+    margin-top: .2rem;
+    margin-bottom: 0rem;
+}
+.card__title + p + p {
+    margin-top: .2rem;
+    margin-bottom: 1.5rem;
+}
+
+.card__line {
+    opacity: .3;
+}
+
+.card__list {
+    list-style: none;
+    padding-left: 0;
+    height: 15rem;
+
+}
+.card__item {
+    display: flex;
+    align-content: flex-start;
+    padding-bottom: 1rem;
+}
+
+.card__check {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.card__info {
+    margin:0;
+    padding-left: 1rem;
+}
+
+.card__legal {
+    font-size:.7rem;
+    padding-top: 2rem;
+
+}
+
+.card__link {
+    color: var(--color-black-light);
+}
+   
+/* footer */
+
+footer {
+    color: var(--color-white);
+    background-color: var(--color-black);
+    padding: 2rem;
+}
+
+.footer__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer__nav {
+    width: 60%;
+}
+
+.footer__list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.footer__item {
+    padding-right:2rem;
+}
+
+.footer__link {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: .6rem;
+}
+
+.footer__link:hover {
+    color: var(--color-black-light);
+}
+
+.footer__esp {
+    text-align: right;
+}
+
+.footer__esp:after {
+    content: "";
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    background: url('../img/espana.png') no-repeat ;
+    background-size: cover;
+    background-position:center;
+    margin-left: .8rem;
+}
+
+.footer__copy {
+    color: var(--color-white);
+    font-size: .6rem;
 }
 
