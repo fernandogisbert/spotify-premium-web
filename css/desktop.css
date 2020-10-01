@@ -11,6 +11,12 @@
     --color-pink: rgb(167, 137, 190);
   }
 
+
+  @font-face {
+    font-family: spotify;
+    src: url('../fonts/spotify.ttf'); 
+}
+
 /* Generals */
 
 .container {
@@ -24,7 +30,6 @@
     text-decoration: none;
     color: var(--color-white);
     border-radius: 1.5rem;
-    font-weight: bold; 
     text-transform: uppercase;
     font-size: .9rem;
     letter-spacing: 2px;
@@ -38,7 +43,6 @@
     text-decoration: none;
     color: var(--color-white);
     border-radius: 1.5rem;
-    font-weight: bold; 
     text-transform: uppercase;
     font-size: .9rem;
     letter-spacing: 2px;
@@ -49,11 +53,10 @@
     background-color: var(--color-green-light);
     font-size: .9rem;
     padding: .9rem 3.7rem;
-    font-weight: bold;
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: spotify, Helvetica, Arial, sans-serif;
 }
 
 /* Header */
@@ -97,7 +100,6 @@ header {
 .header__link {
     color: var(--color-white);
     text-decoration: none;
-    font-weight: bold;
 }
 
 .header__link:hover {
@@ -145,13 +147,13 @@ header {
 }
 
 .student__info {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 .student__info1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 .button-white {
